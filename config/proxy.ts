@@ -11,13 +11,13 @@ export default {
     //  localhost:8000/api/的地址正向代理到localhost:8080
     // 之后请求localhost:8000/api会转为向localhost:8080的请求
     // localhost:8000/api/** -> https://localhost:8080**
-    '/api/': {
-      // 要代理的地址
-      target: 'http://localhost:8080',
-      // 配置了这个可以从 http 代理到 https
-      // 依赖 origin 的功能可能需要这个，比如 cookie
-      changeOrigin: true,
-    },
+    // '/api/': {
+    //   // 要代理的地址
+    //   target: 'http://localhost:8080',
+    //   // 配置了这个可以从 http 代理到 https
+    //   // 依赖 origin 的功能可能需要这个，比如 cookie
+    //   changeOrigin: true,
+    // },
   },
   test: {
     '/api/': {
@@ -28,7 +28,7 @@ export default {
   },
   pre: {
     '/api/': {
-      target: 'http://localhost:8080',
+      target: 'http://localhost:8090',
       changeOrigin: true,
       pathRewrite: { '^': '' },
     },
