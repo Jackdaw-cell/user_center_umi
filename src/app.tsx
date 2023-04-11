@@ -56,6 +56,7 @@ export async function getInitialState(): Promise<{ fetchUserInfo: () => Promise<
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
 // @ts-ignore
 export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
+  // @ts-ignore
   return {
     rightContentRender: () => <RightContent />,
     disableContentMargin: false,

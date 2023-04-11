@@ -78,7 +78,7 @@ import {stringify} from "querystring";
 const request = extend({
   // errorHandler, // 默认错误处理
   credentials: 'include', // 默认请求是否带上cookie
-  prefix: process.env.NODE_ENV==='production'?'http://127.0.0.1':undefined   //根据运行环境添加访问地址的前缀
+  prefix: process.env.NODE_ENV==='production'?'http://user-java.linhaijian.top':undefined   //根据运行环境添加访问地址的前缀
   // requestType: 'form',
 });
 
